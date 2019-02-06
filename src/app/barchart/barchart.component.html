@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="chart mt-3 p-4">
+    <h5 class="text-white">{{ title }}</h5>
+    <canvas class="p-4" baseChart [datasets]="barChartData" [labels]="barChartLabel" [options]="barChartOptions"
+      [legend]="barChartLegend" [chartType]="barChartType" [colors]="lineChartColors">
+    </canvas>
+    <div class="text-center">
+      <button class="btn btn-primary" (click)="random()">Randomize</button>
+    </div>
+  </div>
+</div>
